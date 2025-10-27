@@ -1,6 +1,7 @@
 //
-// Created by luisf on 25/10/2025.
+// Created by Janus on 26/10/2025.
 //
+
 
 #include "Tablero.h"
 #include <cstdlib>
@@ -159,7 +160,7 @@ void Tablero::Definirposicion() {
 //establezco una veriable para el condicional = 0
     //el condicional se va a repetir mientras que la posicion x , y sea igual a 0 matriz[x][y]= 0
 //llamo a los dos metodos
-    //definiriposicionx meguarda cualquier numero en el atributo x
+    //definiriposicionx me guarda cualquier numero en el atributo x
     //definiposcion y me guarda cualquier nuemro el atributo y
 
 }
@@ -184,4 +185,21 @@ int Tablero::GetTableroX() {
 }
 int Tablero::GetTableroY() {
     return TableroY;
+}
+//Se añadio el getter para poder leer la matriz en movimiento.cpp
+int Tablero::matriz[10][10] = {
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0}
+};
+
+int (&Tablero::GetMatrizStatic())[10][10] {
+    return matriz;
 }

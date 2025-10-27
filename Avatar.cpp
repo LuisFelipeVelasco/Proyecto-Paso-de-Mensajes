@@ -1,6 +1,7 @@
 //
-// Created by luisf on 25/10/2025.
+// Created by Janus on 26/10/2025.
 //
+
 
 #include "Avatar.h"
 #include <iostream>

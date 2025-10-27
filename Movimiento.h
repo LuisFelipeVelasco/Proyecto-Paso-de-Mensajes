@@ -1,11 +1,12 @@
 //
-// Created by luisf on 25/10/2025.
+// Created by Janus on 26/10/2025.
 //
 
 #ifndef PROYECTO_AGENTE_INTELIGENTE_MOVIMIENTO_H
 #define PROYECTO_AGENTE_INTELIGENTE_MOVIMIENTO_H
 
 #include <string>
+#include <vector>
 
 /*
 ===============================================================================
@@ -20,19 +21,23 @@ Colaboradores:
 */
 class Movimiento {
 private:
-     int& PosicionX ;
-     int& PosicionY ;
+    int& PosicionX ;
+    int& PosicionY ;
+
 public:
     Movimiento( int& posicionX ,  int& posicionY); // el personaje tiene un metodo , get position , ese se le passa a este constructor y HAY QUE HACER QUE
     std::string Detectar(); // llamo al metodo Detectar , el llama a todas los metodos de detectacion y toma una decisicion respecto al booleano que me den , ¿Cual descision?, llamar a un metodo de movimiento y devuelve un string que sera la posicion en consola
-    bool DetectarVacioDerecha();
-    bool DetectarVacioIzquierda();
-    bool DetectarVacioArriba();
-    bool DetectarVacioAbajo();
+
+    bool DetectarVacioDerecha(int (&matriz)[10][10]);
+    bool DetectarVacioIzquierda(int (&matriz)[10][10]);
+    bool DetectarVacioArriba(int (&matriz)[10][10]);
+    bool DetectarVacioAbajo(int (&matriz)[10][10]);
     void MoverseArriba();
     void MoverseAbajo();
     void MoverseDerecha();
     void MoverseIzquierda();
+
+
 
 };
 // valor avatar y = 3 , //vaor avatar x = 4
@@ -57,7 +62,10 @@ public:
 //casilla = laberinto[x][y]
 //if casilla==1 {return true};
 
-#endif //PROYECTO_AGENTE_INTELIGENTE_MOVIMIENTO_H
+
 
 
 // dependiendo de los true o false de detectar se llama uno o dos de movimiento al azar
+
+
+#endif //PASO_MENSAJES_MOVIMIENTO_H

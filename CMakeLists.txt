@@ -1,15 +1,12 @@
 cmake_minimum_required(VERSION 4.0)
-project(PROYECTO_AGENTE_INTELIGENTE)
+project(Paso_Mensajes)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 20)
 
-include_directories(.)
-
-add_executable(PROYECTO_AGENTE_INTELIGENTE
-        Avatar.cpp
-        Avatar.h
-        main.cpp
+add_executable(Paso_Mensajes main.cpp
+        Movimiento.cpp
+        Movimiento.h
         Tablero.cpp
         Tablero.h
-        Movimiento.cpp
-        Movimiento.h)
+        Avatar.cpp
+        Avatar.h)
