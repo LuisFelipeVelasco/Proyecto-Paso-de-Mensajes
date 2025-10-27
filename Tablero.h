@@ -1,5 +1,5 @@
 //
-// Created by luisf on 25/10/2025.
+// Created by Janus on 26/10/2025.
 //
 
 #ifndef PROYECTO_AGENTE_INTELIGENTE_TABLERO_H
@@ -21,7 +21,7 @@ class Tablero {
 private:
     int TableroX{};
     int TableroY{};
-    int matriz[10][10];
+    static int matriz[10][10];
 public:
     Tablero();
     void Definirposicion();
@@ -29,9 +29,10 @@ public:
     void DefinirposicionY(); //cuando empieza el juego
     int GetTableroX();
     int GetTableroY();
+    static int (&GetMatrizStatic())[10][10] ;//se declara un getter de la matriz para poder leerla en movimiento.cpp
+
 
 
 };
 
-
-#endif //PROYECTO_AGENTE_INTELIGENTE_TABLERO_H
+#endif //PASO_MENSAJES_TABLERO_H

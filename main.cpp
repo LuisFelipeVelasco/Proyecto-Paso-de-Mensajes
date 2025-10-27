@@ -27,6 +27,14 @@ int main() {
     MovimientoAgente.MoverseArriba();
     AgenteI.Posicion();
 
+    std::string resultadoV=MovimientoAgente.Detectar();
+    std::cout << resultadoV << std::endl;
+
+
+
+
+
+
 
 
 

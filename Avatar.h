@@ -1,6 +1,7 @@
 //
-// Created by luisf on 25/10/2025.
+// Created by Janus on 26/10/2025.
 //
+
 
 #ifndef PROYECTO_AGENTE_INTELIGENTE_AVATAR_H
 #define PROYECTO_AGENTE_INTELIGENTE_AVATAR_H
@@ -36,4 +37,4 @@ public:
 
 
 
-#endif //PROYECTO_AGENTE_INTELIGENTE_AVATAR_H
+#endif //PASO_MENSAJES_AVATAR_H
