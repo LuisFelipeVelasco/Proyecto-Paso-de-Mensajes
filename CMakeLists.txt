@@ -1,12 +1,17 @@
 cmake_minimum_required(VERSION 4.0)
-project(Paso_Mensajes)
+project(Proyecto_soldado_Clion)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Paso_Mensajes main.cpp
+include_directories(.)
+
+add_executable(Proyecto_soldado_Clion
+        Avatar.cpp
+        Avatar.h
+        main.cpp
         Movimiento.cpp
         Movimiento.h
         Tablero.cpp
         Tablero.h
-        Avatar.cpp
-        Avatar.h)
+        Visual.cpp
+        Visual.h)
